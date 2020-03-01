@@ -14,12 +14,9 @@ EndIf
 nCount=0
 
 Do while fws_accept()>=0
-
-	fws_write(Transform(Datetime())+" : hello 汉字测试") 
-
-	nCount = nCount + 1 
-
-	If nCount>5000
-		Exit
-	EndIf 
+    fws_write(Transform(Datetime())+" : hello 汉字测试") 
+    nCount = nCount + 1 
+    If nCount>5000
+    	Exit
+    EndIf 
 EndDo 
