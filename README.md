@@ -2,7 +2,7 @@
 
 VFP的WEB接口函数，用于web开发，可以运行于IIS或者nginx下，扩展你的VFP WEB开发能力。支持CGI和FASTCGI模式。
 
-一个hello world 
+一个经典 hello world  例子：
 
 
 Set Path To JustPath(_vfp.ServerName) ADDITIVE 
