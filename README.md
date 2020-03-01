@@ -8,9 +8,13 @@ VFP的WEB接口函数，用于web开发，可以运行于IIS或者nginx下，扩
 Set Path To JustPath(_vfp.ServerName) ADDITIVE 
 
 Set Library To  fws.dll 
+
 If _vfp.StartMode=0
+
 	fws_listen("0.0.0.0",9000)
+	
 EndIf 
+
 nCount=0
 
 Do while fws_accept()>=0
